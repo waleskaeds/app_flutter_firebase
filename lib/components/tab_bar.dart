@@ -2,6 +2,7 @@ import 'package:app_flutter_firebase/pages/current_weather.dart';
 import 'package:app_flutter_firebase/pages/time_history.dart';
 import 'package:app_flutter_firebase/pages/weather_forecast.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class TabBarComponent extends StatelessWidget {
   const TabBarComponent({super.key});
@@ -14,6 +15,7 @@ class TabBarComponent extends StatelessWidget {
 
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
+        backgroundColor: Colors.white.withOpacity(0.8),
         items: const <BottomNavigationBarItem> [
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.thermometer),
